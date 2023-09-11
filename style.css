@@ -1,0 +1,16 @@
+body {
+    background-color: #e3e1e1;
+}
+
+.a, .b {
+    width: 125px;
+    height: 125px;
+}
+
+.a{
+    background-color: #329bf7;
+}
+
+.b{
+    background-color: #3be5ff;
+}

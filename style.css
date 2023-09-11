@@ -1,16 +1,72 @@
 body {
     background-color: #e3e1e1;
+    width:100%;
+    height:100%;
+    overflow: hidden;
 }
 
-.a, .b {
-    width: 125px;
-    height: 125px;
+.navbar {
+    width: 99%;
+    height: 70px;
+    display:flex;
 }
 
+.main {
+    width:99%;
+    height:512px;
+    border: 1px solid #bebebe70;
+}
 .a{
-    background-color: #329bf7;
+    background-color: #32c6f796;
 }
 
+.logoimg {
+    width:80%;
+    height:80%;
+    margin:0;
+    overflow: hidden;
+}
+.logo {
+    justify-content: center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    top:50%;
+    align-items:center;
+}
 .b{
     background-color: #3be5ff;
+}
+.button {
+    width:50%;
+    height:70px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    top:50%;
+    align-items:center;
+}
+
+.button:hover {
+    background-color: #32c6f7;
+    cursor:pointer;
+}
+
+.lside, .rside {
+    width:50%;
+    height:512px;
+    display: flex;
+}
+
+
+.row {
+    display:flex;
+}
+
+.calculatorbase {
+    background-color: rgb(205, 205, 205);
+    width:45%;
+    height:400px;
+    margin-left: 30%;
+    margin-top:4%;
 }

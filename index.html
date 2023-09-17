@@ -8,6 +8,7 @@
     <script src="script.js"></script>
 </head>
 <body onload="initialize();">
+    <div class="cover">
     <div class="navbar a">
         <div class="button" id="main"><p class="navtext">Menü</p></div>
         <div class="button" id="about"><p class="navtext">Rólunk</p></div>
@@ -21,26 +22,52 @@
     <div class="main">
     <div class="row">
         <div class="lside">
+            <div class="loginregister">
+                <div class="b">
+                    <label class="label">
+                <span class="label">Bejelentkezés</span><br>
+            </label>
+                <label class="label">
+                <span class="subLabel">Felhasználó név</span>
+                <input type="text" name="username", id="username"/>
+            </label>
+            <label class="label">
+                <span class="subLabel">Jelszó</span>
+                <input type="password" name="password", id="password"/>
+            </label>
+            <input type="button" value="Bejelentkezés" class="bejelentkezes">
+            <hr>
+            <label class="label">
+        <span class="label">Új felhasználó?</span><br><br>
+    </label>
+    <label class="label">
+<span class="reglabel"><a href="#">Kattints ide a regisztráláshoz</a></span><br>
+</label>
+        </div></div>
+
+
+
         </div>
         <div class="rside">
             <div class="calculatorbase">
                 <div class="b">
                 <label class="label">
-                    <span class="field">Mennyiség(HUF)</span></br>
-                    <input type="number" name="amount" id="amount" min="1000000" max="1350000" />
+                    <span class="field" id="forint">Mennyiség(HUF)</span></br>
+                    <input type="number" name="amount" id="amount" min="1000000" max="1350000" value="1000000" />
             </label></div>
             <br>
             <div class="b">
-            <label class="label">
-                <span class="field">Idő(hónap)</span></br>
-                <input type="range" name="time" id="time" min="3" max="48" />
-        </label></div>
+                <label class="label">
+                    <span class="field" id="honap">12 hónap</span></br>
+                    <input type="range" name="time" id="time" min="3" max="48" />
+            </label></div>
         <h2 id="output">12000Ft/Hó</h2>
+        <h4 id="thm">11% THM</h4>
         <h4>Összesen Visszafizetendő</h4>
         <h4 id="total">1200000Ft</h4>
             </div>
         </div>
     </div>
-    </div>
+    </div></div>
 </body>
 </html>

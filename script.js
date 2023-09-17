@@ -12,11 +12,19 @@ document.getElementById('faq').addEventListener('click', function (event) {
     window.location = "faq.html";
 });
 document.getElementById('amount').addEventListener('change', function (event) {
-    var amount =  document.getElementById('amount').value;
-    console.log(amount);
+    document.getElementById('honap').innerText = `${document.getElementById('time').value} hónap`;
+    var amount = Math.round(parseInt(document.getElementById('amount').value) / parseInt(document.getElementById('time').value));
+    document.getElementById('output').innerText = `${amount}Ft/hó`;
+    var thm = document.getElementById('thm').innerText.trim('%THM');
+    thm = parseInt(thm);
+    document.getElementById('total').innerText = `${Math.round(parseInt(document.getElementById('amount').value) * (1 + thm/100))}Ft`;
 });
 document.getElementById('time').addEventListener('change', function (event) {
-    var time = document.getElementById('time').value;
-    console.log(time);
+    document.getElementById('honap').innerText = `${document.getElementById('time').value} hónap`;
+    var amount = Math.round(parseInt(document.getElementById('amount').value) / parseInt(document.getElementById('time').value));
+    document.getElementById('output').innerText = `${amount}Ft/hó`;
+    var thm = document.getElementById('thm').innerText.trim('%THM');
+    thm = parseInt(thm);
+    document.getElementById('total').innerText = `${Math.round(parseInt(document.getElementById('amount').value) * (1 + thm/100))}Ft`;
 });
 }
